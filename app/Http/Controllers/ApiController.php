@@ -76,7 +76,7 @@ class ApiController extends Controller
         ]);
     }
 
-    public function respond($data, $headers=[])
+    public function response($data, $headers=[])
     {
         return Response::json($data, $this->getStatusCode(), $headers);
     }
